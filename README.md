@@ -17,6 +17,7 @@ Ubuntu環境のカスタム設定を管理するディレクトリ。
 | Line-in | オーディオLine-inループバック自動起動 | setup-linein.sh | revert-linein.sh |
 | 最大化 | すべてのウィンドウを自動最大化 | setup-maximize.sh | revert-maximize.sh |
 | Chrome | アプリ検索での重複表示を修正 | setup-chrome.sh | - |
+| Nautilus | XDGディレクトリ英語化、サイドバー日本語表示 | setup-nautilus-sidebar.sh | - |
 
 ## Line-in制御
 
