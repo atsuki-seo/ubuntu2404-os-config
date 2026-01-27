@@ -15,6 +15,8 @@ Ubuntu環境のカスタム設定を管理するディレクトリ。
 | キーボード | CapsLock→Ctrl、Alt⇔Win入れ替え | setup-keyboard.sh | revert-keyboard.sh |
 | 背景色 | デスクトップ・ロック画面を#1d1d1dに | setup-appearance.sh | revert-appearance.sh |
 | Line-in | オーディオLine-inループバック自動起動 | setup-linein.sh | revert-linein.sh |
+| 最大化 | すべてのウィンドウを自動最大化 | setup-maximize.sh | revert-maximize.sh |
+| Chrome | アプリ検索での重複表示を修正 | setup-chrome.sh | - |
 
 ## Line-in制御
 
