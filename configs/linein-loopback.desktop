@@ -2,7 +2,7 @@
 Type=Application
 Name=Line-in Loopback
 Comment=Enable Line-in loopback with mute on login
-Exec=/home/atsuki/linein_ctrl.sh start
+Exec=/home/atsuki/ubuntu2404-os-config/linein_ctrl.sh start
 StartupNotify=false
 Terminal=false
 X-GNOME-Autostart-enabled=true
