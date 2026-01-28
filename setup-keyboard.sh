@@ -14,4 +14,11 @@ XKBOPTIONS="altwin:swap_alt_win,ctrl:nocaps"
 BACKSPACE="guess"
 EOF
 sudo dpkg-reconfigure -phigh console-setup
-echo "キーボード設定完了。再ログインで反映されます"
+
+# GNOME環境用の設定（即時反映）
+if command -v gsettings &> /dev/null; then
+    gsettings set org.gnome.desktop.input-sources xkb-options "['altwin:swap_alt_win', 'ctrl:nocaps']"
+    echo "GNOME設定を適用しました（即時反映）"
+fi
+
+echo "キーボード設定完了"
