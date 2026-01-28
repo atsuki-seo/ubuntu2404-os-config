@@ -38,6 +38,7 @@ Ubuntu環境のカスタム設定を管理するディレクトリ。
 ./setup-keyboard.sh     # 要sudo、再ログイン必要
 ./setup-appearance.sh   # 即時反映
 ./setup-linein.sh       # 次回ログインから有効
+./setup-maximize.sh     # 即時反映
 ```
 
 ### 設定をリバート
@@ -46,6 +47,7 @@ Ubuntu環境のカスタム設定を管理するディレクトリ。
 ./revert-keyboard.sh    # 要sudo、再ログイン必要
 ./revert-appearance.sh  # 即時反映
 ./revert-linein.sh      # 次回ログインから無効
+./revert-maximize.sh    # 即時反映
 ```
 
 ## 関連するシステムファイル
@@ -54,9 +56,11 @@ Ubuntu環境のカスタム設定を管理するディレクトリ。
 - `/etc/X11/xorg.conf.d/10-monitor.conf` — Xorgモニター設定
 - `/etc/gdm3/custom.conf` — GDM設定（Wayland無効化）
 - `~/.config/autostart/linein-loopback.desktop` — Line-in自動起動
+- `~/.config/devilspie2/maximize.lua` — ウィンドウ自動最大化
 
 ## configs/
 
 システムに適用される設定ファイルのコピー:
 - `10-monitor.conf` — Xorgモニター設定
 - `linein-loopback.desktop` — Line-in自動起動設定
+- `maximize.lua` — devilspie2ウィンドウ最大化設定
