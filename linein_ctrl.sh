@@ -37,7 +37,7 @@ case "$1" in
         echo "Starting Line-in loopback..."
         unload_existing
         # ループバックをロード
-        pactl load-module module-loopback source="$TARGET_SOURCE" latency_msec=1
+        pactl load-module module-loopback source="$TARGET_SOURCE" latency_msec=20
         
         # 第二引数に --mute があれば開始直後にミュートする
         if [ "$2" == "--mute" ]; then
